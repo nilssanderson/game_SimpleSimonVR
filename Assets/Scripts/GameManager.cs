@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	public Material[] colors;
+	public GameObject[] gameObjects;
 	public float stayLit;
 	public float stayLitCounter;
+	public float waitBetweenLights;
+
+	public List<int> activeSequence;
 
 	private int colorSelect;
+	private float waitBetweenCounter;
+
+	public bool shouldBeLit;
+	public bool shouldBeDark;
+	public bool gameActive;
+	private int positionInSequence;
+	private int inputInSequence;
 
 
 	// Use this for initialization
@@ -19,28 +29,94 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		// stayLitCounter is greater than 0 decrement it over time
-		if (stayLitCounter > 0) {
+		if (shouldBeLit == true) {
 			stayLitCounter -= Time.deltaTime;
-		} else {
-			// Set this colors alpha to half
-			colors[colorSelect].color = new Color(colors[colorSelect].color.r, colors[colorSelect].color.g, colors[colorSelect].color.b, .5f);
+			
+			if (stayLitCounter < 0) {
+				// Set this colors alpha to half
+				gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, .5f);
+				shouldBeLit = false;
+
+				// Looking at the pause
+				shouldBeDark = true;
+				waitBetweenCounter = waitBetweenLights;
+				// Increment the positionInSequence
+				positionInSequence++;
+			}
+		}
+
+		if (shouldBeDark == true) {
+			waitBetweenCounter -= Time.deltaTime;
+
+			// If positionInSequence is greater or equal to activeSequence length (count as its a list)
+			if (positionInSequence >= activeSequence.Count) {
+				shouldBeDark = false;
+				gameActive = true;
+			} else {
+				if (waitBetweenCounter < 0) {
+					// Set this colors alpha to full
+					gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
+					gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+
+					stayLitCounter = stayLit;
+					shouldBeLit = true;
+					shouldBeDark = false;
+				}
+			}
 		}
 	}
 
 	public void StartGame() {
+		// Empty list
+		activeSequence.Clear();
+		// Set position on start to 0
+		positionInSequence = 0;
+		inputInSequence = 0;
 		// Set a random color
-		colorSelect = Random.Range(0, colors.Length);
+		colorSelect = Random.Range(0, gameObjects.Length);
+		// Add random colorSelect number to list
+		activeSequence.Add(colorSelect);
 		// Set this colors alpha to full
-		colors[colorSelect].color = new Color(colors[colorSelect].color.r, colors[colorSelect].color.g, colors[colorSelect].color.b, 1f);
+		gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
+		gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
 
 		stayLitCounter = stayLit;
+		shouldBeLit = true;
 	}
 
 	public void ColorPressed(int whichButton) {
-		if (colorSelect == whichButton) {
-			Debug.Log ("Correct");
-		} else {
-			Debug.Log ("Wrong");
+		// Sequence has stopped
+		if (gameActive) {
+			// Set this colors alpha to full
+//			gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
+//			gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+
+			if (activeSequence[inputInSequence] == whichButton) {
+				Debug.Log ("Correct");
+				inputInSequence++;
+
+				// If current value is more than the list in sequence
+				if (inputInSequence >= activeSequence.Count) {
+					// Set position on start to 0
+					positionInSequence = 0;
+					inputInSequence = 0;
+					// Set a random color
+					colorSelect = Random.Range(0, gameObjects.Length);
+					// Add random colorSelect number to list
+					activeSequence.Add(colorSelect);
+					// Set this colors alpha to full
+					gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
+					gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+
+					stayLitCounter = stayLit;
+					shouldBeLit = true;
+
+					gameActive = false;
+				}
+			} else {
+				Debug.Log ("Wrong");
+				gameActive = false;
+			}
 		}
 	}
 }
