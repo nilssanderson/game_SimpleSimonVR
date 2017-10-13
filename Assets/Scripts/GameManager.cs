@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 	public float waitBetweenLights;
 	public float waitAfterSequence;
 	public float waitAfterSequenceCounter;
+	public float waitAfterGameOver;
+	public float waitAfterGameOverCounter;
 
 	public List<int> activeSequence;
 
@@ -22,6 +24,7 @@ public class GameManager : MonoBehaviour {
 	private int positionInSequence;
 	private int inputInSequence;
 	private bool sequenceFinished;
+	private bool gameOver;
 
 
 	// Use this for initialization
@@ -34,10 +37,27 @@ public class GameManager : MonoBehaviour {
 		if (!gameActive) {
 			// Disable colliders until the game starts again
 			// @TODO - loop through and disable colliders
-//			gameObjects.GetComponent<BoxCollider>().enabled = false;
+			foreach (GameObject gameObject in gameObjects) {
+				gameObject.GetComponent<MeshCollider> ().enabled = false;
+			}
+		} else {
+			foreach (GameObject gameObject in gameObjects) {
+				gameObject.GetComponent<MeshCollider> ().enabled = true;
+			}
+		}
+
+		if (gameOver == true) {
+			gameActive = false;
+			waitAfterGameOverCounter -= Time.deltaTime;
+
+			if (waitAfterGameOverCounter < 0) {
+				StartGame ();
+				waitAfterGameOverCounter = waitAfterGameOver;
+			}
 		}
 
 		if (sequenceFinished == true) {
+			gameActive = false;
 			waitAfterSequenceCounter -= Time.deltaTime;
 
 			if (waitAfterSequenceCounter < 0) {
@@ -55,7 +75,6 @@ public class GameManager : MonoBehaviour {
 				stayLitCounter = stayLit;
 				shouldBeLit = true;
 
-				gameActive = false;
 				sequenceFinished = false;
 				waitAfterSequenceCounter = waitAfterSequence;
 			}
@@ -115,6 +134,8 @@ public class GameManager : MonoBehaviour {
 
 		stayLitCounter = stayLit;
 		waitAfterSequenceCounter = waitAfterSequence;
+		gameOver = false;
+		waitAfterGameOverCounter = waitAfterGameOver;
 		shouldBeLit = true;
 	}
 
@@ -136,8 +157,16 @@ public class GameManager : MonoBehaviour {
 
 			} else {
 				Debug.Log ("Wrong");
+
 				gameActive = false;
+				gameOver = true;
 			}
+		}
+	}
+
+	public void ResetOpacitys() {
+		foreach (GameObject gameObject in gameObjects) {
+			gameObject.GetComponent<Renderer> ().material.color = new Color (gameObject.GetComponent<Renderer> ().material.color.r, gameObject.GetComponent<Renderer> ().material.color.g, gameObject.GetComponent<Renderer> ().material.color.b, .5f);
 		}
 	}
 }

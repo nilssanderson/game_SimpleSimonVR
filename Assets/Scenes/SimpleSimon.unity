@@ -161,6 +161,9 @@ MonoBehaviour:
   stayLitCounter: 0.5
   waitBetweenLights: 0.25
   waitAfterSequence: 3
+  waitAfterSequenceCounter: 0
+  waitAfterGameOver: 3
+  waitAfterGameOverCounter: 0
   activeSequence: 
   shouldBeLit: 0
   shouldBeDark: 0
