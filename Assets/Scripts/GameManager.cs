@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (!gameActive) {
+			// Disable colliders until the game starts again
+			// @TODO - loop through and disable colliders
+//			gameObjects.GetComponent<BoxCollider>().enabled = false;
+		}
 		// stayLitCounter is greater than 0 decrement it over time
 		if (shouldBeLit == true) {
 			stayLitCounter -= Time.deltaTime;
