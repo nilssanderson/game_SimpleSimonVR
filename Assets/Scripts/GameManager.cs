@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour {
 	public float stayLit;
 	public float stayLitCounter;
 	public float waitBetweenLights;
-    public float waitAfterCorrectSequence;
-    public float waitAfterIncorrectAttempt;
+	public float waitAfterSequence;
+	public float waitAfterSequenceCounter;
+	public float waitAfterGameOver;
+	public float waitAfterGameOverCounter;
 
     public List<int> activeSequence;
 
@@ -21,6 +23,8 @@ public class GameManager : MonoBehaviour {
 	public bool gameActive;
 	private int positionInSequence;
 	private int inputInSequence;
+	private bool sequenceFinished;
+	private bool gameOver;
 
 
     // Use this for initialization
@@ -33,8 +37,51 @@ public class GameManager : MonoBehaviour {
 		if (!gameActive) {
 			// Disable colliders until the game starts again
 			// @TODO - loop through and disable colliders
-//			gameObjects.GetComponent<BoxCollider>().enabled = false;
+			foreach (GameObject gameObject in gameObjects) {
+				gameObject.GetComponent<MeshCollider> ().enabled = false;
+			}
+		} else {
+			foreach (GameObject gameObject in gameObjects) {
+				gameObject.GetComponent<MeshCollider> ().enabled = true;
+			}
 		}
+
+		if (gameOver == true) {
+			gameActive = false;
+			waitAfterGameOverCounter -= Time.deltaTime;
+
+			if (waitAfterGameOverCounter < 0) {
+				StartGame ();
+				waitAfterGameOverCounter = waitAfterGameOver;
+			}
+		}
+
+		if (sequenceFinished == true) {
+			gameActive = false;
+			waitAfterSequenceCounter -= Time.deltaTime;
+
+			if (waitAfterSequenceCounter < 0) {
+				// Set position on start to 0
+				positionInSequence = 0;
+				inputInSequence = 0;
+				// Set a random color
+				colorSelect = Random.Range(0, gameObjects.Length);
+				// Add random colorSelect number to list
+				activeSequence.Add(colorSelect);
+				// Set this colors alpha to full
+				gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
+				// NOTIFICATION SOUND
+				AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
+				//gameObjects[activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+
+				stayLitCounter = stayLit;
+				shouldBeLit = true;
+
+				sequenceFinished = false;
+				waitAfterSequenceCounter = waitAfterSequence;
+			}
+		}
+
 		// stayLitCounter is greater than 0 decrement it over time
 		if (shouldBeLit == true) {
 			stayLitCounter -= Time.deltaTime;
@@ -64,8 +111,8 @@ public class GameManager : MonoBehaviour {
 					// Set this colors alpha to full
 					gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
                     // NOTIFICATION SOUND
-                    //AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
-                    gameObjects[activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+                    AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
+                    //gameObjects[activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
 
 					stayLitCounter = stayLit;
 					shouldBeLit = true;
@@ -87,10 +134,14 @@ public class GameManager : MonoBehaviour {
 		activeSequence.Add(colorSelect);
 		// Set this colors alpha to full
 		gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
-		gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
-        //AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
+		// NOTIFICATION SOUND
+		AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
+		//gameObjects[activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
 
-        stayLitCounter = stayLit;
+		stayLitCounter = stayLit;
+		waitAfterSequenceCounter = waitAfterSequence;
+		gameOver = false;
+		waitAfterGameOverCounter = waitAfterGameOver;
 		shouldBeLit = true;
 	}
 
@@ -103,54 +154,40 @@ public class GameManager : MonoBehaviour {
 
 			if (activeSequence[inputInSequence] == whichButton) {
 				Debug.Log ("Correct");
-                // CORRECT SOUND GOES HERE
-                gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
-                //AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().correctEvent, gameObjects[activeSequence[positionInSequence]]);
-                inputInSequence++;
+				// CORRECT SOUND GOES HERE
+				//gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+				AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().correctEvent, gameObjects[activeSequence[positionInSequence]]);
 
-                // If current value is more than the list in sequence
-                if (inputInSequence >= activeSequence.Count) {
-                    StartCoroutine(WaitAfterSequence(waitAfterCorrectSequence));
-                }
+				StartCoroutine (Wait (.5f));
+				inputInSequence++;
+
+				// If current value is more than the list in sequence
+				if (inputInSequence >= activeSequence.Count) {
+					sequenceFinished = true;
+				}
+
 			} else {
 				Debug.Log ("Wrong");
-                //gameActive = false;
-                // WRONG SOUND GOES HERE
-                gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
-                //AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().incorrectEvent, gameObjects[activeSequence[positionInSequence]]);
-                StartCoroutine(WaitAfterWrong(waitAfterIncorrectAttempt));
+				// WRONG SOUND GOES HERE
+				//gameObjects [activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
+				AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().incorrectEvent, gameObjects[activeSequence[positionInSequence]]);
 
-            }
+				StartCoroutine (Wait (.5f));
+
+				gameActive = false;
+				gameOver = true;
+			}
 		}
 	}
 
-    private IEnumerator WaitAfterWrong(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
+	public void ResetOpacitys() {
+		foreach (GameObject gameObject in gameObjects) {
+			gameObject.GetComponent<Renderer> ().material.color = new Color (gameObject.GetComponent<Renderer> ().material.color.r, gameObject.GetComponent<Renderer> ().material.color.g, gameObject.GetComponent<Renderer> ().material.color.b, .5f);
+		}
+	}
 
-        StartGame();
-    }
-
-    private IEnumerator WaitAfterSequence(float waitTime) {
-        Debug.Log("Before wait");
-        yield return new WaitForSeconds(waitTime);
-
-        Debug.Log("After wait");
-
-        // Set position on start to 0
-        positionInSequence = 0;
-        inputInSequence = 0;
-        // Set a random color
-        colorSelect = Random.Range(0, gameObjects.Length);
-        // Add random colorSelect number to list
-        activeSequence.Add(colorSelect);
-        // Set this colors alpha to full
-        gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
-        gameObjects[activeSequence[positionInSequence]].GetComponent<AudioSource>().PlayOneShot(gameObjects[activeSequence[positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
-        //AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
-        stayLitCounter = stayLit;
-        shouldBeLit = true;
-
-        gameActive = false;
-    }
+	private IEnumerator Wait(float waitTime) {
+		yield return new WaitForSeconds(waitTime);
+		ResetOpacitys ();
+	}
 }
