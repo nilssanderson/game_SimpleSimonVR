@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1211727895	Play_1_Y_notification			\Default Work Unit\Play_1_Y_notification	
+	1813395792	Play_2_G_notification			\Default Work Unit\Play_2_G_notification	
+	3076200897	Play_4_B_notification			\Default Work Unit\Play_4_B_notification	
+	3490253340	Play_3_R_notification			\Default Work Unit\Play_3_R_notification	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	288901632	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\4-B-notification\Wwise Sine	
+	436508176	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\3-R-notification\Wwise Sine	
+	665847592	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\1-Y-notification\Wwise Sine	
+	693159022	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\2-G-notification\Wwise Sine	
+

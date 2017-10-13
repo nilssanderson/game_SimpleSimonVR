@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2B4E684D-EE9C-4CB4-8236-EB22E60A4B02}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{2B4E684D-EE9C-4CB4-8236-EB22E60A4B02}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_1_Y_notification" ID="{63C06942-23E0-4313-84E1-FE165C2D8110}">
+					<ChildrenList>
+						<Action Name="" ID="{F405F89A-9241-409F-9CC3-84F9E334407F}" ShortID="798576502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1-Y-notification" ID="{A9547CDC-3682-4986-8038-A42F8EA67682}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_2_G_notification" ID="{65852099-98FB-43C5-B0B8-A9620AA04291}">
+					<ChildrenList>
+						<Action Name="" ID="{2E587FB0-69BD-4EC4-BF41-77C41FE55EE4}" ShortID="196611630">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="2-G-notification" ID="{323F9E33-D881-4EC1-96CA-43E2DB5FDAE7}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_3_R_notification" ID="{4AF2E1C7-D124-4450-820A-93CC6228E8EE}">
+					<ChildrenList>
+						<Action Name="" ID="{B93AB28E-2C6F-4342-A752-1F91EC2B8452}" ShortID="1016349355">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="3-R-notification" ID="{C1DA0CBD-C7E6-4F40-81B5-4A122438490C}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_4_B_notification" ID="{559D25B5-432F-44E7-A628-923915AF2221}">
+					<ChildrenList>
+						<Action Name="" ID="{1EF59927-7824-437B-88C4-3DCAF4C87E80}" ShortID="685183326">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="4-B-notification" ID="{66668759-DC00-4300-A211-581FAB5FBD30}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
