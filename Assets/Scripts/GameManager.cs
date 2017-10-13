@@ -148,6 +148,8 @@ public class GameManager : MonoBehaviour {
 
 			if (activeSequence[inputInSequence] == whichButton) {
 				Debug.Log ("Correct");
+
+				StartCoroutine (Wait (.5f));
 				inputInSequence++;
 
 				// If current value is more than the list in sequence
@@ -157,6 +159,8 @@ public class GameManager : MonoBehaviour {
 
 			} else {
 				Debug.Log ("Wrong");
+
+				StartCoroutine (Wait (.5f));
 
 				gameActive = false;
 				gameOver = true;
@@ -168,5 +172,10 @@ public class GameManager : MonoBehaviour {
 		foreach (GameObject gameObject in gameObjects) {
 			gameObject.GetComponent<Renderer> ().material.color = new Color (gameObject.GetComponent<Renderer> ().material.color.r, gameObject.GetComponent<Renderer> ().material.color.g, gameObject.GetComponent<Renderer> ().material.color.b, .5f);
 		}
+	}
+
+	private IEnumerator Wait(float waitTime) {
+		yield return new WaitForSeconds(waitTime);
+		ResetOpacitys ();
 	}
 }
