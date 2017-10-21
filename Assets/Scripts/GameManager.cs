@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
+	public float waitBeforeStarting;
 	public GameObject[] gameObjects;
 	public float stayLit;
 	public float stayLitCounter;
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartGame ();
+		StartCoroutine (Wait (waitBeforeStarting));
 	}
 
 	// Update is called once per frame
@@ -135,6 +136,7 @@ public class GameManager : MonoBehaviour {
 		// Set this colors alpha to full
 		gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color = new Color(gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.r, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.g, gameObjects[activeSequence[positionInSequence]].GetComponent<Renderer>().material.color.b, 1f);
 		// NOTIFICATION SOUND
+		Debug.Log(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent);
 		AkSoundEngine.PostEvent(gameObjects[activeSequence[positionInSequence]].GetComponentInChildren<WwisePositionSetup>().notificationEvent, gameObjects[activeSequence[positionInSequence]]);
 		//gameObjects[activeSequence [positionInSequence]].GetComponent<AudioSource> ().PlayOneShot (gameObjects [activeSequence [positionInSequence]].GetComponent<SelectionHandler>().sound, 0.7f);
 
@@ -175,6 +177,11 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void SelectionExited(int whichButton) {
+		// Set this colors alpha to full
+		gameObjects[whichButton].GetComponent<Renderer>().material.color = new Color(gameObjects[whichButton].GetComponent<Renderer>().material.color.r, gameObjects[whichButton].GetComponent<Renderer>().material.color.g, gameObjects[whichButton].GetComponent<Renderer>().material.color.b, .5f);
+	}
+
 	public void PlayWrongSound(int whichButton) {
 		// WRONG SOUND
 		if (gameActive && gameObjects[whichButton]) {
@@ -199,6 +206,6 @@ public class GameManager : MonoBehaviour {
 
 	private IEnumerator Wait(float waitTime) {
 		yield return new WaitForSeconds(waitTime);
-		ResetOpacitys ();
+		StartGame ();
 	}
 }

@@ -27,6 +27,7 @@ public class SelectionHandler : MonoBehaviour {
 	void OnTriggerExit(Collider other) {
 //		Debug.Log ("Something exited me: " + other);
 		if (other.gameObject.tag == "hand") {
+			theGM.SelectionExited (thisButtonNumber);
 			this.selected = false;
 		}
 	}
