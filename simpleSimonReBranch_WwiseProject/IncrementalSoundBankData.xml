@@ -3,26 +3,26 @@
 	<Platform GUID="{3191EA18-BBF4-40EA-8ED0-085D9C7581EC}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2785214758" Timestamp="131532501024982672"/>
-				<File Name="simpleSimonVR" Hash="2541728060" Timestamp="131532501024942563"/>
+				<File Name="Init" Hash="2785214758" Timestamp="131532520955042758"/>
+				<File Name="simpleSimonVR" Hash="778599785" Timestamp="131532528585079741"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3486661569" Timestamp="131532501024992699"/>
+				<File Name="" Hash="1474614199" Timestamp="131532528585134889"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{71EEF0C9-2BDB-4123-A683-B6258D83D78C}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="22291320" Timestamp="131532501021539310"/>
-				<File Name="simpleSimonVR" Hash="2541728060" Timestamp="131532501021494191"/>
+				<File Name="Init" Hash="22291320" Timestamp="131532520954225607"/>
+				<File Name="simpleSimonVR" Hash="778599785" Timestamp="131532528584353043"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2726097003" Timestamp="131532501021554357"/>
+				<File Name="" Hash="2609108905" Timestamp="131532528584412960"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

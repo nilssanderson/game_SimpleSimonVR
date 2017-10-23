@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="80">
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="980587243" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="980597275" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="980597275" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="980607296" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="980607296" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="980617326" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="980617326" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Effects\Default Work Unit.wwu" DateLow="980627353" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Effects\Factory Effects.wwu" DateLow="980637376" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Events\Default Work Unit.wwu" DateLow="980637376" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="980647403" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="983213237" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="983223264" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="983407036" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="983417227" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Presets\Default Work Unit.wwu" DateLow="985331378" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Queries\Default Work Unit.wwu" DateLow="985552167" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Queries\Factory Queries.wwu" DateLow="985552167" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\simpleSimonReBranch_WwiseProject.HOME.wsettings" DateLow="2235548422" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\simpleSimonReBranch_WwiseProject.wproj" DateLow="985903169" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="985563072" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="985563072" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\States\Default Work Unit.wwu" DateLow="985571794" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Switches\Default Work Unit.wwu" DateLow="985571794" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="985853016" DateHigh="30624800"/>
+	<ValidationCacheItem File="C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="985863067" DateHigh="30624800"/>
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch\simpleSimonReBranch_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1446777117" DateHigh="30622822"/>
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch\simpleSimonReBranch_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1446827245" DateHigh="30622822"/>
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch\simpleSimonReBranch_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1446716952" DateHigh="30622822"/>

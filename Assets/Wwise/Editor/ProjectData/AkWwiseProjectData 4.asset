@@ -1,0 +1,227 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b0078d6da677a4982689870f80cd0b, type: 3}
+  m_Name: AkWwiseProjectData 4
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: 
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{2B4E684D-EE9C-4CB4-8236-EB22E60A4B02}'
+    m_lastTimePsrt1: 1558861504
+    m_lastTimePart2: -1999300041
+    List:
+    - Name: Play_1_Y_notification
+      Path: Default Work Unit\Play_1_Y_notification
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_1_Y_notification
+        ObjectType: 3
+      ID: 1211727895
+      Guid: 4269c063e023134384e1fe165c2d8110
+      maxAttenuation: 30
+    - Name: Play_2_G_notification
+      Path: Default Work Unit\Play_2_G_notification
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_2_G_notification
+        ObjectType: 3
+      ID: 1813395792
+      Guid: 99208565fb98c543b0b8a9620aa04291
+      maxAttenuation: 30
+    - Name: Play_3_R_notification
+      Path: Default Work Unit\Play_3_R_notification
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_3_R_notification
+        ObjectType: 3
+      ID: -804713956
+      Guid: c7e1f24a24d15044820a93cc6228e8ee
+      maxAttenuation: 30
+    - Name: Play_4_B_notification
+      Path: Default Work Unit\Play_4_B_notification
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_4_B_notification
+        ObjectType: 3
+      ID: -1218766399
+      Guid: b5259d552f43e744a628923915af2221
+      maxAttenuation: 30
+    - Name: Play_Amb_Meadow_1shot_birdSing_rndm
+      Path: Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Amb_Meadow_1shot_birdSing_rndm
+        ObjectType: 3
+      ID: 132947601
+      Guid: 1b48131c3a735e47ae7140e95d945a1e
+      maxAttenuation: 30
+    - Name: Play_Amb_Meadow_1shot_birdSing_rndm_01
+      Path: Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Amb_Meadow_1shot_birdSing_rndm_01
+        ObjectType: 3
+      ID: -1625863523
+      Guid: 8bb372df5ab87248b5dd6b0740538f63
+      maxAttenuation: 30
+    - Name: Play_x_correct_rndm_01
+      Path: Default Work Unit\Play_x_correct_rndm_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_correct_rndm_01
+        ObjectType: 3
+      ID: 1458294881
+      Guid: 6d7a30507decfd47b01e6f14aff41e04
+      maxAttenuation: 30
+    - Name: Play_x_correct_rndm_02
+      Path: Default Work Unit\Play_x_correct_rndm_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_correct_rndm_02
+        ObjectType: 3
+      ID: 1458294882
+      Guid: 5286a46e8b00f44bbcceb7c65fd2132d
+      maxAttenuation: 30
+    - Name: Play_x_correct_rndm_03
+      Path: Default Work Unit\Play_x_correct_rndm_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_correct_rndm_03
+        ObjectType: 3
+      ID: 1458294883
+      Guid: 0ebe44e3e3a55945a42a02c1d0d4dfcd
+      maxAttenuation: 30
+    - Name: Play_x_correct_rndm_04
+      Path: Default Work Unit\Play_x_correct_rndm_04
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_correct_rndm_04
+        ObjectType: 3
+      ID: 1458294884
+      Guid: 914285c6b126854aa074e80cddc6158e
+      maxAttenuation: 30
+    - Name: Play_x_inCorrect_rndm_01
+      Path: Default Work Unit\Play_x_inCorrect_rndm_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_inCorrect_rndm_01
+        ObjectType: 3
+      ID: -2096423698
+      Guid: e7798da981de8a49a609cfacab6a354d
+      maxAttenuation: 30
+    - Name: Play_x_inCorrect_rndm_02
+      Path: Default Work Unit\Play_x_inCorrect_rndm_02
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_inCorrect_rndm_02
+        ObjectType: 3
+      ID: -2096423699
+      Guid: 290cb8fe0ea95a48a94a3508aad1c628
+      maxAttenuation: 30
+    - Name: Play_x_inCorrect_rndm_03
+      Path: Default Work Unit\Play_x_inCorrect_rndm_03
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_inCorrect_rndm_03
+        ObjectType: 3
+      ID: -2096423700
+      Guid: 4624ec3974a1494cbc3344c7de02185d
+      maxAttenuation: 30
+    - Name: Play_x_inCorrect_rndm_04
+      Path: Default Work Unit\Play_x_inCorrect_rndm_04
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_x_inCorrect_rndm_04
+        ObjectType: 3
+      ID: -2096423701
+      Guid: df98fd2efa3fa1459908e828d9ec7b8d
+      maxAttenuation: 30
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{84BA0C5C-4900-4C6B-8487-FDA6CF930DF2}'
+    m_lastTimePsrt1: 1561447392
+    m_lastTimePart2: -1999300041
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{DA570580-6252-4EB6-B29B-3B3C976525D7}'
+    m_lastTimePsrt1: 1563795922
+    m_lastTimePart2: -1999300041
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{6987C206-D6A8-41EB-BB49-7A3FB4EF23F5}'
+    m_lastTimePsrt1: 1563795922
+    m_lastTimePart2: -1999300041
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{3E7685B7-9A69-416A-B63B-1AC97FBF3220}'
+    m_lastTimePsrt1: 1563787200
+    m_lastTimePart2: -1999300041
+    List:
+    - Name: simpleSimonVR
+      Path: Default Work Unit\simpleSimonVR
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: simpleSimonVR
+        ObjectType: 7
+      ID: -1526339101
+      Guid: a47cc752dc697e45b3495899fa155431
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{81D9D70A-461D-467A-8AB4-8C2D2B8BCD08}'
+    m_lastTimePsrt1: 1558871531
+    m_lastTimePart2: -1999300041
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{0A295F86-7761-46B3-8CA1-524A818B9FCF}'
+    m_lastTimePsrt1: 1564077144
+    m_lastTimePart2: -1999300041
+    List: []
+  ExpandedItems:
+  - /simpleSimonReBranch_WwiseProject
+  - /simpleSimonReBranch_WwiseProject/Events
+  - /simpleSimonReBranch_WwiseProject/Events/Default Work Unit
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4

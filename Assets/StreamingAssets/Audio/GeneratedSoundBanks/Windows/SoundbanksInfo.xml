@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>/Users/davidbaxter/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Volumes/Project Data/Game/simpleSimonVR/simpleSimonReBranch_WwiseProject/</ProjectRoot>
-		<SourceFilesRoot>/Users/davidbaxter/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Volumes/Project Data/Game/simpleSimonVR/simpleSimonReBranch_WwiseProject/.cache/Windows/</SourceFilesRoot>
-		<SoundBanksRoot>/Users/davidbaxter/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Volumes/Project Data/Game/simpleSimonVR/simpleSimonReBranch_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ProjectRoot>C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\HOME\Documents\ssvr_rep\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/davidbaxter/Library/Application Support/Wwise2017/Bottles/wwise/dosdevices/z:/Volumes/Project Data/Game/simpleSimonVR/simpleSimonReBranch_WwiseProject/GeneratedSoundBanks/Windows/</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\HOME\Documents\ssvr_rep\simpleSimonReBranch_WwiseProject\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -21,209 +21,209 @@
 			<ShortName>simpleSimonVR</ShortName>
 			<Path>simpleSimonVR.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1211727895" Name="Play_1_Y_notification" ObjectPath="\Events\Default Work Unit\Play_1_Y_notification"/>
-				<Event Id="1813395792" Name="Play_2_G_notification" ObjectPath="\Events\Default Work Unit\Play_2_G_notification"/>
-				<Event Id="3490253340" Name="Play_3_R_notification" ObjectPath="\Events\Default Work Unit\Play_3_R_notification"/>
-				<Event Id="3076200897" Name="Play_4_B_notification" ObjectPath="\Events\Default Work Unit\Play_4_B_notification"/>
-				<Event Id="132947601" Name="Play_Amb_Meadow_1shot_birdSing_rndm" ObjectPath="\Events\Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm"/>
-				<Event Id="2669103773" Name="Play_Amb_Meadow_1shot_birdSing_rndm_01" ObjectPath="\Events\Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm_01"/>
-				<Event Id="1458294881" Name="Play_x_correct_rndm_01" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_01"/>
-				<Event Id="1458294882" Name="Play_x_correct_rndm_02" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_02"/>
-				<Event Id="1458294883" Name="Play_x_correct_rndm_03" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_03"/>
-				<Event Id="1458294884" Name="Play_x_correct_rndm_04" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_04"/>
-				<Event Id="2198543598" Name="Play_x_inCorrect_rndm_01" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_01"/>
-				<Event Id="2198543597" Name="Play_x_inCorrect_rndm_02" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_02"/>
-				<Event Id="2198543596" Name="Play_x_inCorrect_rndm_03" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_03"/>
-				<Event Id="2198543595" Name="Play_x_inCorrect_rndm_04" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_04"/>
+				<Event Id="1211727895" Name="Play_1_Y_notification" ObjectPath="\Events\Default Work Unit\Play_1_Y_notification" MaxAttenuation="30.000000"/>
+				<Event Id="1813395792" Name="Play_2_G_notification" ObjectPath="\Events\Default Work Unit\Play_2_G_notification" MaxAttenuation="30.000000"/>
+				<Event Id="3490253340" Name="Play_3_R_notification" ObjectPath="\Events\Default Work Unit\Play_3_R_notification" MaxAttenuation="30.000000"/>
+				<Event Id="3076200897" Name="Play_4_B_notification" ObjectPath="\Events\Default Work Unit\Play_4_B_notification" MaxAttenuation="30.000000"/>
+				<Event Id="132947601" Name="Play_Amb_Meadow_1shot_birdSing_rndm" ObjectPath="\Events\Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm" MaxAttenuation="30.000000"/>
+				<Event Id="2669103773" Name="Play_Amb_Meadow_1shot_birdSing_rndm_01" ObjectPath="\Events\Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm_01" MaxAttenuation="30.000000"/>
+				<Event Id="1458294881" Name="Play_x_correct_rndm_01" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_01" MaxAttenuation="30.000000"/>
+				<Event Id="1458294882" Name="Play_x_correct_rndm_02" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_02" MaxAttenuation="30.000000"/>
+				<Event Id="1458294883" Name="Play_x_correct_rndm_03" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_03" MaxAttenuation="30.000000"/>
+				<Event Id="1458294884" Name="Play_x_correct_rndm_04" ObjectPath="\Events\Default Work Unit\Play_x_correct_rndm_04" MaxAttenuation="30.000000"/>
+				<Event Id="2198543598" Name="Play_x_inCorrect_rndm_01" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_01" MaxAttenuation="30.000000"/>
+				<Event Id="2198543597" Name="Play_x_inCorrect_rndm_02" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_02" MaxAttenuation="30.000000"/>
+				<Event Id="2198543596" Name="Play_x_inCorrect_rndm_03" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_03" MaxAttenuation="30.000000"/>
+				<Event Id="2198543595" Name="Play_x_inCorrect_rndm_04" ObjectPath="\Events\Default Work Unit\Play_x_inCorrect_rndm_04" MaxAttenuation="30.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="99033860" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-6.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-6_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="131743212" Language="SFX">
 					<ShortName>3-mallet-ntf-1.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-1_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="149063345" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-4.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-4_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="149579556" Language="SFX">
 					<ShortName>3-mallet-ntf-3.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-3_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="163542384" Language="SFX">
 					<ShortName>x-inCorrect-6.wav</ShortName>
-					<Path>SFX/x-inCorrect-6_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="171275147" Language="SFX">
 					<ShortName>Amb-Meadow-1shot-birdSing-5.wav</ShortName>
-					<Path>SFX/Amb-Meadow-1shot-birdSing-5_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-1shot-birdSing-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="196832255" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-5.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-5_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="215144314" Language="SFX">
 					<ShortName>x-correct-6.wav</ShortName>
-					<Path>SFX/x-correct-6_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="267967476" Language="SFX">
 					<ShortName>x-correct-5.wav</ShortName>
-					<Path>SFX/x-correct-5_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="291262669" Language="SFX">
 					<ShortName>x-inCorrect-2.wav</ShortName>
-					<Path>SFX/x-inCorrect-2_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="329576429" Language="SFX">
 					<ShortName>3-mallet-ntf-4.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-4_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="344294547" Language="SFX">
 					<ShortName>3-mallet-ntf-5.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-5_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="385747973" Language="SFX">
 					<ShortName>2-string-ntf-3.wav</ShortName>
-					<Path>SFX/2-string-ntf-3_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="430168692" Language="SFX">
 					<ShortName>Amb-Meadow-1shot-birdSing-4.wav</ShortName>
-					<Path>SFX/Amb-Meadow-1shot-birdSing-4_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-1shot-birdSing-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="435034904" Language="SFX">
 					<ShortName>1-Flute-ntf-5.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-5_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="459654414" Language="SFX">
 					<ShortName>1-Flute-ntf-2.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-2_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="502717715" Language="SFX">
 					<ShortName>1-Flute-ntf-6.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-6_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="515681919" Language="SFX">
 					<ShortName>1-Flute-ntf-1.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-1_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="525448317" Language="SFX">
 					<ShortName>1-Flute-ntf-3.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-3_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="569331765" Language="SFX">
 					<ShortName>3-gong-ntf-6.wav</ShortName>
-					<Path>SFX/3-gong-ntf-6_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="587827804" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-1.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-1_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="591174118" Language="SFX">
 					<ShortName>3-mallet-ntf-2.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-2_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="604838080" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-3.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-3_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="626532522" Language="SFX">
 					<ShortName>x-correct-2.wav</ShortName>
-					<Path>SFX/x-correct-2_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="630914060" Language="SFX">
 					<ShortName>x-correct-3.wav</ShortName>
-					<Path>SFX/x-correct-3_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="641375292" Language="SFX">
 					<ShortName>x-inCorrect-1.wav</ShortName>
-					<Path>SFX/x-inCorrect-1_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="673698731" Language="SFX">
 					<ShortName>3-gong-ntf-4.wav</ShortName>
-					<Path>SFX/3-gong-ntf-4_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="678168424" Language="SFX">
 					<ShortName>Amb-Meadow-riverStream-2.wav</ShortName>
-					<Path>SFX/Amb-Meadow-riverStream-2_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-riverStream-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="717480931" Language="SFX">
 					<ShortName>3-mallet-ntf-6.wav</ShortName>
-					<Path>SFX/3-mallet-ntf-6_1C9C67B2.wem</Path>
+					<Path>SFX\3-mallet-ntf-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="729437373" Language="SFX">
 					<ShortName>3-gong-ntf-3.wav</ShortName>
-					<Path>SFX/3-gong-ntf-3_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="739945740" Language="SFX">
 					<ShortName>2-string-ntf-1.wav</ShortName>
-					<Path>SFX/2-string-ntf-1_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="756817019" Language="SFX">
 					<ShortName>x-inCorrect-5.wav</ShortName>
-					<Path>SFX/x-inCorrect-5_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="787860184" Language="SFX">
 					<ShortName>2-string-ntf-5.wav</ShortName>
-					<Path>SFX/2-string-ntf-5_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="792682842" Language="SFX">
 					<ShortName>2-string-ntf-2.wav</ShortName>
-					<Path>SFX/2-string-ntf-2_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="803880720" Language="SFX">
 					<ShortName>2-string-ntf-6.wav</ShortName>
-					<Path>SFX/2-string-ntf-6_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-6_1C9C67B2.wem</Path>
 				</File>
 				<File Id="815912837" Language="SFX">
 					<ShortName>x-correct-1.wav</ShortName>
-					<Path>SFX/x-correct-1_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="843767286" Language="SFX">
 					<ShortName>x-inCorrect-3.wav</ShortName>
-					<Path>SFX/x-inCorrect-3_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="881153175" Language="SFX">
 					<ShortName>2-string-ntf-4.wav</ShortName>
-					<Path>SFX/2-string-ntf-4_1C9C67B2.wem</Path>
+					<Path>SFX\2-string-ntf-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="887721593" Language="SFX">
 					<ShortName>Amb-Meadow-1shot-birdSing-1.wav</ShortName>
-					<Path>SFX/Amb-Meadow-1shot-birdSing-1_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-1shot-birdSing-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="889656996" Language="SFX">
 					<ShortName>3-gong-ntf-2.wav</ShortName>
-					<Path>SFX/3-gong-ntf-2_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="914090578" Language="SFX">
 					<ShortName>Amb-Meadow-1shot-birdSing-2.wav</ShortName>
-					<Path>SFX/Amb-Meadow-1shot-birdSing-2_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-1shot-birdSing-2_1C9C67B2.wem</Path>
 				</File>
 				<File Id="969447837" Language="SFX">
 					<ShortName>1-Flute-ntf-4.wav</ShortName>
-					<Path>SFX/1-Flute-ntf-4_1C9C67B2.wem</Path>
+					<Path>SFX\1-Flute-ntf-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1024918161" Language="SFX">
 					<ShortName>Amb-Meadow-1shot-birdSing-3.wav</ShortName>
-					<Path>SFX/Amb-Meadow-1shot-birdSing-3_1C9C67B2.wem</Path>
+					<Path>SFX\Amb-Meadow-1shot-birdSing-3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1025759083" Language="SFX">
 					<ShortName>x-inCorrect-4.wav</ShortName>
-					<Path>SFX/x-inCorrect-4_1C9C67B2.wem</Path>
+					<Path>SFX\x-inCorrect-4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1049692820" Language="SFX">
 					<ShortName>3-gong-ntf-1.wav</ShortName>
-					<Path>SFX/3-gong-ntf-1_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1064325197" Language="SFX">
 					<ShortName>3-gong-ntf-5.wav</ShortName>
-					<Path>SFX/3-gong-ntf-5_1C9C67B2.wem</Path>
+					<Path>SFX\3-gong-ntf-5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="1066613149" Language="SFX">
 					<ShortName>x-correct-4.wav</ShortName>
-					<Path>SFX/x-correct-4_1C9C67B2.wem</Path>
+					<Path>SFX\x-correct-4_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
