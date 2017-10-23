@@ -50,4 +50,30 @@
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch_WwiseIntegrationTemp\simpleSimonReBranch_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1231192675" DateHigh="30622822"/>
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch_WwiseIntegrationTemp\simpleSimonReBranch_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1231287930" DateHigh="30622822"/>
 	<ValidationCacheItem File="D:\Game\simpleSimonReBranch_WwiseIntegrationTemp\simpleSimonReBranch_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1231313243" DateHigh="30622822"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3233255885" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="3233255885" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="3233265909" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="3233265909" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="3233285962" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="3233295989" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="3233295989" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Effects\Default Work Unit.wwu" DateLow="3233295989" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Effects\Factory Effects.wwu" DateLow="3233306067" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Events\Default Work Unit.wwu" DateLow="3233316042" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="3233316042" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="3234709752" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="3234709752" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="3234719792" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="3234719792" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Presets\Default Work Unit.wwu" DateLow="3235862819" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Queries\Default Work Unit.wwu" DateLow="3235862819" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Queries\Factory Queries.wwu" DateLow="3235862819" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\simpleSimonReBranch_WwiseProject.HOME.wsettings" DateLow="3235892904" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\simpleSimonReBranch_WwiseProject.wproj" DateLow="3235902926" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="3235872846" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="3235872846" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\States\Default Work Unit.wwu" DateLow="3235872846" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Switches\Default Work Unit.wwu" DateLow="3235882883" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="3235882883" DateHigh="30624791"/>
+	<ValidationCacheItem File="D:\Game\ssvr\simpleSimonReBranch_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="3235882883" DateHigh="30624791"/>
 </ValidationCache>

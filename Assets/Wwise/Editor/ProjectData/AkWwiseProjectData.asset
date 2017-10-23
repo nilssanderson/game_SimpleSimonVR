@@ -13,14 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2B4E684D-EE9C-4CB4-8236-EB22E60A4B02}'
-    m_lastTimePsrt1: 63303680
-    m_lastTimePart2: -1999300603
+    m_lastTimePsrt1: -27863
+    m_lastTimePart2: -1999300045
     List:
     - Name: Play_1_Y_notification
-      Path: Default Work Unit/Play_1_Y_notification
+      Path: Default Work Unit\Play_1_Y_notification
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -28,9 +28,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1211727895
       Guid: 4269c063e023134384e1fe165c2d8110
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_2_G_notification
-      Path: Default Work Unit/Play_2_G_notification
+      Path: Default Work Unit\Play_2_G_notification
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -38,9 +38,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1813395792
       Guid: 99208565fb98c543b0b8a9620aa04291
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_3_R_notification
-      Path: Default Work Unit/Play_3_R_notification
+      Path: Default Work Unit\Play_3_R_notification
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -48,9 +48,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -804713956
       Guid: c7e1f24a24d15044820a93cc6228e8ee
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_4_B_notification
-      Path: Default Work Unit/Play_4_B_notification
+      Path: Default Work Unit\Play_4_B_notification
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -58,9 +58,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1218766399
       Guid: b5259d552f43e744a628923915af2221
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_Amb_Meadow_1shot_birdSing_rndm
-      Path: Default Work Unit/Play_Amb_Meadow_1shot_birdSing_rndm
+      Path: Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -68,9 +68,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 132947601
       Guid: 1b48131c3a735e47ae7140e95d945a1e
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_Amb_Meadow_1shot_birdSing_rndm_01
-      Path: Default Work Unit/Play_Amb_Meadow_1shot_birdSing_rndm_01
+      Path: Default Work Unit\Play_Amb_Meadow_1shot_birdSing_rndm_01
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -78,9 +78,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -1625863523
       Guid: 8bb372df5ab87248b5dd6b0740538f63
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_correct_rndm_01
-      Path: Default Work Unit/Play_x_correct_rndm_01
+      Path: Default Work Unit\Play_x_correct_rndm_01
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -88,9 +88,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1458294881
       Guid: 6d7a30507decfd47b01e6f14aff41e04
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_correct_rndm_02
-      Path: Default Work Unit/Play_x_correct_rndm_02
+      Path: Default Work Unit\Play_x_correct_rndm_02
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -98,9 +98,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1458294882
       Guid: 5286a46e8b00f44bbcceb7c65fd2132d
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_correct_rndm_03
-      Path: Default Work Unit/Play_x_correct_rndm_03
+      Path: Default Work Unit\Play_x_correct_rndm_03
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -108,9 +108,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1458294883
       Guid: 0ebe44e3e3a55945a42a02c1d0d4dfcd
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_correct_rndm_04
-      Path: Default Work Unit/Play_x_correct_rndm_04
+      Path: Default Work Unit\Play_x_correct_rndm_04
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -118,9 +118,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1458294884
       Guid: 914285c6b126854aa074e80cddc6158e
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_inCorrect_rndm_01
-      Path: Default Work Unit/Play_x_inCorrect_rndm_01
+      Path: Default Work Unit\Play_x_inCorrect_rndm_01
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -128,9 +128,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2096423698
       Guid: e7798da981de8a49a609cfacab6a354d
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_inCorrect_rndm_02
-      Path: Default Work Unit/Play_x_inCorrect_rndm_02
+      Path: Default Work Unit\Play_x_inCorrect_rndm_02
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -138,9 +138,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2096423699
       Guid: 290cb8fe0ea95a48a94a3508aad1c628
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_inCorrect_rndm_03
-      Path: Default Work Unit/Play_x_inCorrect_rndm_03
+      Path: Default Work Unit\Play_x_inCorrect_rndm_03
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -148,9 +148,9 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2096423700
       Guid: 4624ec3974a1494cbc3344c7de02185d
-      maxAttenuation: 0
+      maxAttenuation: 30
     - Name: Play_x_inCorrect_rndm_04
-      Path: Default Work Unit/Play_x_inCorrect_rndm_04
+      Path: Default Work Unit\Play_x_inCorrect_rndm_04
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -158,37 +158,37 @@ MonoBehaviour:
         ObjectType: 3
       ID: -2096423701
       Guid: df98fd2efa3fa1459908e828d9ec7b8d
-      maxAttenuation: 0
+      maxAttenuation: 30
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{84BA0C5C-4900-4C6B-8487-FDA6CF930DF2}'
-    m_lastTimePsrt1: 63303680
-    m_lastTimePart2: -1999300603
+    m_lastTimePsrt1: -482033416
+    m_lastTimePart2: -1999300050
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{DA570580-6252-4EB6-B29B-3B3C976525D7}'
-    m_lastTimePsrt1: 338637440
-    m_lastTimePart2: -1999301663
+    m_lastTimePsrt1: -480870322
+    m_lastTimePart2: -1999300050
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6987C206-D6A8-41EB-BB49-7A3FB4EF23F5}'
-    m_lastTimePsrt1: 338637440
-    m_lastTimePart2: -1999301663
+    m_lastTimePsrt1: -480860285
+    m_lastTimePart2: -1999300050
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3E7685B7-9A69-416A-B63B-1AC97FBF3220}'
-    m_lastTimePsrt1: 338637440
-    m_lastTimePart2: -1999301663
+    m_lastTimePsrt1: -480870322
+    m_lastTimePart2: -1999300050
     List:
     - Name: simpleSimonVR
-      Path: Default Work Unit/simpleSimonVR
+      Path: Default Work Unit\simpleSimonVR
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
@@ -197,18 +197,18 @@ MonoBehaviour:
       ID: -1526339101
       Guid: a47cc752dc697e45b3495899fa155431
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{81D9D70A-461D-467A-8AB4-8C2D2B8BCD08}'
-    m_lastTimePsrt1: 338637440
-    m_lastTimePart2: -1999301663
+    m_lastTimePsrt1: -483427126
+    m_lastTimePart2: -1999300050
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{0A295F86-7761-46B3-8CA1-524A818B9FCF}'
-    m_lastTimePsrt1: 338637440
-    m_lastTimePart2: -1999301663
+    m_lastTimePsrt1: -480860285
+    m_lastTimePart2: -1999300050
     List: []
   ExpandedItems:
   - /simpleSimonReBranch_WwiseProject

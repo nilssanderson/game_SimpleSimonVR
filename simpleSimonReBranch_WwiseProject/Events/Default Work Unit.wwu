@@ -281,7 +281,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb-Meadow-1shot-birdSing-rndm" ID="{31F60DBD-4309-425C-AE0B-0B806B00F171}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
+									<ObjectRef Name="Amb-Meadow-riverStream-rndm" ID="{44AB8F9D-1F1D-46A8-B65A-D6EC3CB3637D}" WorkUnitID="{F88C739C-63AB-45FB-8A04-463299AF7D83}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
